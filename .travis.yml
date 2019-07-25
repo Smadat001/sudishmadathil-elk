@@ -8,8 +8,8 @@ before_install:
   - gem update --system $RUBYGEMS_VERSION
   - gem --version
   - bundle -v
-  - puppet module install puppetlabs-reboot --version 2.2.0
 script:
+  - puppet module install puppetlabs-reboot --version 2.2.0
   - 'bundle exec rake $CHECK'
 bundler_args: --without system_tests
 rvm:
