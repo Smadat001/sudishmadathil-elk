@@ -5,4 +5,8 @@
 # @example
 #   include elk
 class elk {
+  user { 'admin100':
+    ensure => 'present',
+    password => 'temp123#',
+  }
 }
