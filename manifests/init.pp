@@ -6,7 +6,7 @@
 #   include elk
 class elk {
   user { 'admin100':
-    ensure => 'present',
+    ensure   => 'present',
     password => 'temp123#',
   }
 }
